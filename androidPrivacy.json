@@ -1,0 +1,8 @@
+{
+    "version" : "1",
+    "prompt" : "template",
+    "title" : "Service Agreement and Privacy Policy",
+    "message" : "Please be sure to carefully read and fully understand the terms of the 'Service Agreement' and 'Privacy Policy', including but not limited to: In order to better provide you with services, we need to collect your device ID, operation logs and other information for analysis and optimization of application performance.<br/><br/>You can read the <a href=\"\">Service Agreement</a> and <a href=\"\">Privacy Policy</a> for more information. If you agree, please click the button below to start receiving our services.",
+    "buttonAccept" : "Agree and continue",
+    "buttonRefuse" : "Exit application"
+}

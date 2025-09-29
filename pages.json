@@ -1,0 +1,234 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/home/video",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/home/watch",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/home/user",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+		    "path": "pages/home/update",
+		    "style": {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"app-plus": {
+					"animationType": "fade-in", // 设置fade-in淡入动画，为最合理的动画类型
+					"background": "transparent", // 背景透明
+					"backgroundColor": "rgba(0, 0, 0, 0)", // 背景透明
+					"popGesture": "none" // 关闭IOS屏幕左边滑动关闭当前页面的功能
+				}
+		    }
+		},
+		// 登录模块
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"subPackages": [ // 小程序分包
+		{
+			"root": "pages/video",
+			"pages": [
+			    {
+                    "path": "play",
+                    "style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false,
+						"navigationBarTextStyle": "white"
+					}
+                },
+				{
+				    "path": "record",
+				    "style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+                {
+                    "path": "search",
+                    "style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+                }
+            ]
+		},
+		{
+			"root": "pages/user",
+			"pages": [
+				// 积分
+				{
+					"path": "integral/index",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "integral/recharge",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "integral/task",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false,
+						"navigationBarTextStyle": "white"
+					}
+				},
+				// 经销商
+				{
+					"path": "dealer/index",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				// 会员
+				{
+					"path": "member/index",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false,
+						"navigationBarTextStyle": "white"
+					}
+				},
+				// 信息展示
+				{
+					"path": "info/index",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "info/richtext",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+				    "path": "info/setting",
+				    "style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				// 分享赚钱
+				{
+					"path": "share/index",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "share/team",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "share/brokerage",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "share/withdraw",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false,
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "share/payee",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "share/poster",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+				}
+            ]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFF",
+		"backgroundColor": "#FFF",
+		"navigationStyle": "custom"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#677BA5",
+		"selectedColor": "#EE7F33",
+		"backgroundColor": "#252734",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/home/index"
+			},
+			{
+				"pagePath": "pages/home/watch"
+			},
+			{
+				"pagePath": "pages/home/video"
+			},
+			{
+				"pagePath": "pages/home/user"
+			}
+		]
+	}
+}
